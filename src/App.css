@@ -1,0 +1,157 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  border: 2px solid lightblue ;
+  min-width: 80%;
+  min-height: 100%;
+}
+.potterFacts{
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding-top: 1em;
+  padding-left: 9px;
+  padding-right: 9px;
+  font-weight: bold;
+}
+.spellscss {
+  background-color: rgba(0, 0, 0, 0.6);
+  font-weight: bold;
+
+}
+
+.newSpell {
+  margin-left: 4em;
+  margin-right: 4em;
+  color: pink;
+  border-radius: 30px;
+}
+#potterpalss {
+  border: 3px solid #ddd; /* Light gray border */
+  border-radius: 15px; /* Adjust the radius value for more or less curve */
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+
+}
+#custom {
+  border: 1px solid pink;
+border-radius: 30px;
+margin-left: 3em;
+margin-right: 1em;
+}
+#canon {
+border: 1px solid pink;
+border-radius: 30px;
+margin-left: 3em;
+margin-right: 1em;
+}
+.logo {
+  height: 1em;
+  will-change: filter;
+  transition: filter 300ms;
+  font-family: 'HarryP'; /* Use the custom HarryP font */
+  font-size: 6em;
+  color: #ebab0a; /* A golden color */
+  background-color: black;
+}
+#bigpotter {
+  background-color: black;
+  padding: 3px
+}
+#potter {
+  color: white
+}
+#hub {
+  border:1px solid black;
+  font-size: 2.5rem;
+  background-color: orange;
+  color: black;
+  border-radius: 10px;
+}
+@font-face {
+  font-family: 'HarryP'; /* Name of the font family */
+  src: url('/fonts/HARRYP__.TTF') format('truetype'); /* Path to the font file */
+  font-weight: normal;
+  font-style: normal;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 0.8em lightgreen);
+  text-shadow: yellow;
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em lightgreen);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+@font-face {
+  font-family: 'pottertype'; /* Name of the font family */
+  src: url('LUMOS.TTF') format('truetype'); /* Path to the font file */
+  font-weight: normal;
+  font-style: normal;
+}
+.pottertype {
+    text-shadow: 2px 2px 4px #888; /* Optional shadow effect */
+    padding: 0.7rem;
+    background-color: black; /* Black background color */
+    color: orange; /* Orange text color */
+    border: none; /* No border */
+    border-radius: 20px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 2em; /* Font size */
+    margin-top: 1rem; /* Space above the button */
+    margin-left: 5em; /* Space to the left */
+    margin-right: 4em; /* Space to the right */
+    font-family: 'pottertype'; /* Custom font family */
+    text-decoration: underline wavy;
+  }
+.fancytext {
+  font-size:1.5em
+}
+strong {
+  text-decoration: underline;
+}
+#welcome {
+  font-size: 3em;
+  text-align: center;
+  border: 1px solid pink;
+  margin-right: 6em;
+  margin-left: 6em;
+}
+
+body {
+  background-image: url('/image/map.avif'); /* Path to your background image */
+  background-size: cover; /* Ensures the image covers the entire background */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed; /* Makes the background image fixed on scroll */
+}
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+.harry-potter-characters {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .searchbar {
+    margin-bottom: 20px;
+  }
+  
+  .character-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .character-card {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    color: white
+  }
+  
+  .character-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+   
+  }
