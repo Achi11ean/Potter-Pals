@@ -59,7 +59,7 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: white;
     background-color: #ffffff;
   }
   a:hover {
@@ -114,6 +114,25 @@ ol {
 @media (max-width: 800px) {
   .spelllist {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 450px) {
+  .logo {
+    flex-direction: column;
+    font-size: 2.5em
+  }
+  #welcome {
+    font-size: 1em
+  }
+  #hub {
+    font-size: 1em
+  }
+  .characterCard img{
+    max-width: 200px;  
+  }
+  .spellButtons{
+    font-size:1em
   }
 }
 

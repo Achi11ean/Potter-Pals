@@ -71,7 +71,7 @@ function handleDeleteClick() {
         
         return (
         <li key={index} className="characterCard">
-          {character.image ? <img src={character.image} alt={""} /> : null}
+          {character.image ? <img className="images" src={character.image} alt={""} /> : null}
           <h2>{character.name} </h2>
           {character.house && <p>House: {character.house}</p>}
           {character.ancestry && <p>Ancestry: {character.ancestry}</p>}

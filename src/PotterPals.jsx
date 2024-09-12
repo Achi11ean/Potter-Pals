@@ -46,7 +46,7 @@ function CharacterList({ characters }) {
     <ol className="characterList">
       {characters.map((character) => (
         <li key={character.name} className="characterCard">
-          {character.image ? <img src={character.image} alt={""} /> : null}
+          {character.image ? <img className="img" src={character.image} alt={""} /> : null}
           <h2>{character.name} </h2>
           {character.house && <p>House: {character.house}</p>}
           {character.ancestry && <p>Ancestry: {character.ancestry}</p>}
