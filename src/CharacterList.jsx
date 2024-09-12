@@ -51,6 +51,7 @@ function SearchBar({ onSearchChange }) {
 function CharacterList({ characters }) {
   console.log("characters are: ", characters);
   return (
+    <div>
     <ol className="characterList">
       {characters.map((character) => (
         <li key={character.name} className="characterCard">
@@ -68,6 +69,7 @@ function CharacterList({ characters }) {
         </li>
       ))}
     </ol>
+    </div>
   );
 }
 
