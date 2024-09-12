@@ -1,25 +1,13 @@
 import React from "react";
 import "./App.css"
-// This component relates to the buttons that make new spells or display all spells
-function AdminNavBar({ onChangePage }) {
-  // const buttonStyle = {
-  //   padding: "0.5rem",
-  //   backgroundColor: "orange", // Green background color
-  //   color: "black", // White text color
-  //   border: "none", // No border
-  //   borderRadius: "12px", // Rounded corners
-  //   cursor: "pointer", // Pointer cursor on hover
-  //   fontSize: "1rem", // Increase font size
-  //   marginTop: "1rem", // Space above the button
-  //   fontFamily: "Playfair Display",
-  //   fontSize: "2em",
-  //   textDecoration: "underline wavy",
-  //   paddingRight: ".5em",
-  //   paddingLeft: ".5em",
-  //   marginRight: "5.5em",
-  //   marginLeft: "5.5em"
 
-  // };
+
+
+
+// This component relates to the buttons that make new spells or display all spells
+// This was one of those things that catcherine helped me understand and Once I got everything working I didn't want to confuse myself trying to change the names so they stuck around
+
+function AdminNavBar({ onChangePage }) {
   return (
     <nav>
       <button className="spellButtons"  onClick={() => onChangePage("Form")}>New Spell</button>

@@ -1,6 +1,14 @@
 import React from "react";
 import NavBar from "./NavBar";
 
+
+
+
+// in the spirit of time i didn't want to make the about too complex but I still wanted it to be interesting; 
+// So I included some new information to some people and I made a very *unique* logo my own concoction to stilll draw the user in.  
+
+
+
 function About() {
   return (
     <main>

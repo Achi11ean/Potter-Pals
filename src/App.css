@@ -32,7 +32,7 @@
   font-size: 2em; /* Font size */
   margin-top: 1rem; /* Space above the button */
   font-family: 'Playfair Display', serif; /* Use the specified font family */
-  text-decoration: underline wavy; /* Underline style */
+  text-decoration: underline; /* Underline style */
   padding-right: 0.5em; /* Right padding */
   padding-left: 0.5em; /* Left padding */
   margin-right: 5.5em; /* Right margin */
@@ -150,7 +150,7 @@ margin-right: 1em;
     margin-left: 5em; /* Space to the left */
     margin-right: 4em; /* Space to the right */
     font-family: 'pottertype'; /* Custom font family */
-    text-decoration: underline wavy;
+    text-decoration: underline;
   }
 .fancytext {
   font-size:1.5em
