@@ -15,7 +15,7 @@ console.log("items is: ", items);
 
 // here we are getting our spells data using the useEffect hook and setting the setItems to the new evaluation of items
 useEffect(() => {
-  fetch("http://localhost:3000/spells")
+  fetch("https://json-server-template-0cqg.onrender.com/spells")
   .then ((response) => response.json())
   .then((items) => setItems(items))
   .catch((error) => console.error("Error fetching items:", error));

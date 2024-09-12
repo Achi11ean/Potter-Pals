@@ -3,7 +3,7 @@ import React from "react";
 function Spell({ spell, setItems, items = [] }) {
   const { id, name, description, spellColor, image } = spell;
   function handleDeleteClick() {
-    fetch(`http://localhost:3000/spells/${id}`, {
+    fetch(`https://json-server-template-0cqg.onrender.com/spells/${id}`, {
       method: "DELETE",
     })
       .then((response) => response.json())

@@ -23,7 +23,7 @@ function CharacterForm({ items, setItems }) {
       wandType: formData.wandType,
       image: formData.image,
     };
-    fetch("http://localhost:3000/spells", {
+    fetch("https://json-server-template-0cqg.onrender.com/characters", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(itemData),
