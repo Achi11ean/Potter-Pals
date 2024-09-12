@@ -11,7 +11,7 @@ function AdminNavBar({ onChangePage }) {
     fontSize: "1rem", // Increase font size
     marginTop: "1rem", // Space above the button
     fontFamily: "Playfair Display",
-    fontSize: "1.5em",
+    fontSize: "2em",
     textDecoration: "underline wavy",
     paddingRight: ".5em",
     paddingLeft: ".5em",

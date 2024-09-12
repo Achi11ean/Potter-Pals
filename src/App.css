@@ -14,13 +14,14 @@
   padding-left: 9px;
   padding-right: 9px;
   font-weight: bold;
+  font-family: 'pottertype';
+  color: white
 }
 .spellscss {
   background-color: rgba(0, 0, 0, 0.6);
   font-weight: bold;
 
 }
-
 .newSpell {
   margin-left: 4em;
   margin-right: 4em;

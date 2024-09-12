@@ -8,7 +8,7 @@ function About() {
       <h1 className="logo" id="potterpalss">
         The PotterHub
       </h1>
-      <div className="potterFacts ">
+      <div className="potterFacts">
         <h2 id="welcome">Welcome to <span id="bigpotter"><span id="potter">Potter</span><span id="hub">Hub</span></span> </h2>
         <p className ="fancytext">
           
