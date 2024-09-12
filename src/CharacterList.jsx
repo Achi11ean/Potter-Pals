@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from "react";
 import "./PotterPals.css";
 
-function PotterPals({ items }) {
+function PotterPals({ items, setItems }) {
   const [characters, setCharacters] = useState([]);
   const [search, setSearch] = useState("");
 
   useEffect(() => {
     fetch("https://hp-api.onrender.com/api/characters")
       .then((response) => response.json())
-      .then((characterData) => setCharacters(characterData))
+      .then((characterData) => {       console.log("Fetched character data:", characterData); // Check what data looks like
+        setCharacters(characterData)})
       .catch((error) => console.error("Error Fetching characters", error));
   }, []);
   const filteredCharacters = characters.filter((character) =>
@@ -25,7 +26,7 @@ function PotterPals({ items }) {
         <h2 id="custom">Custom Characters</h2>
         <br />
         <br />
-        <CharacterList characters={items} />
+        <CharacterList characters={items} setItems={setItems} allowDeleteButton />
       </div>
       <div>
         <h2 id="canon">Canon Characters</h2>
@@ -48,13 +49,28 @@ function SearchBar({ onSearchChange }) {
     </div>
   );
 }
-function CharacterList({ characters }) {
+function CharacterList({ characters, setItems, allowDeleteButton = false }) {
   console.log("characters are: ", characters);
+
   return (
     <div>
     <ol className="characterList">
-      {characters.map((character) => (
-        <li key={character.name} className="characterCard">
+      {characters.map((character, index) => {
+
+function handleDeleteClick() {
+    fetch(`https://json-server-template-0cqg.onrender.com/characters/${character.id}`, {
+      method: "DELETE",
+    })
+      .then((response) => response.json())
+      .then(() => {
+        console.log("deleted");
+        const filtered = characters.filter((item) => item.id !== character.id);
+        setItems(filtered);
+      });
+  }
+        
+        return (
+        <li key={index} className="characterCard">
           {character.image ? <img src={character.image} alt={""} /> : null}
           <h2>{character.name} </h2>
           {character.house && <p>House: {character.house}</p>}
@@ -66,8 +82,13 @@ function CharacterList({ characters }) {
             </p>
           )}
           {character.wandType && <p>Wand Type: {character.wandType}</p>}
+          {allowDeleteButton ? (
+        <button onClick={handleDeleteClick}>Delete Character</button>
+      ) : (
+        <></>
+      )}
         </li>
-      ))}
+      )})}
     </ol>
     </div>
   );

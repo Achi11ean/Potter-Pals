@@ -13,7 +13,7 @@ function App2() {
   const [items, setItems] = useState([]);
 console.log("items is: ", items);
 useEffect(() => {
-  fetch("https://json-server-template-0cqg.onrender.com/character")
+  fetch("https://json-server-template-0cqg.onrender.com/characters")
   .then ((response) => response.json())
   .then((items) => setItems(items))
   .catch((error) => console.error("Error fetching items:", error));
