@@ -52,15 +52,11 @@ text-align:center
 }
  body {
   max-width: fit-content;
-  
+  background-size: 50% auto
  }
 
 }
-@media only screen and (max-width:450px) {
-  body {
-background-size: contain
- }
-}
+
 #potterpalss {
   border: 3px solid #ddd; /* Light gray border */
   border-radius: 15px; /* Adjust the radius value for more or less curve */
@@ -182,10 +178,16 @@ body {
   background-repeat: no-repeat; /* Prevents the background image from repeating */
   background-position: center; /* Centers the background image */
   background-attachment: fixed; /* Makes the background image fixed on scroll */
+  
 }
 
 
 
+@media only screen and (max-width: 450px) {
+  .container {
+    background-size: contain; /* Makes the image smaller on smaller screens */
+  }
+}
 
 
 
