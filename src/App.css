@@ -50,6 +50,9 @@
 font-size:1.2em;
 text-align:center
 }
+body {
+  width: 430px
+}
 }
 #potterpalss {
   border: 3px solid #ddd; /* Light gray border */
