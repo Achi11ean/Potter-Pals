@@ -50,9 +50,15 @@
 font-size:1.2em;
 text-align:center
 }
-body {
-  width: 430px
-}
+ body {
+  max-width: fit-content;
+  
+ }
+ @media only screen and (max-width:450px) {
+  body {
+background-size: contain
+ }
+
 }
 #potterpalss {
   border: 3px solid #ddd; /* Light gray border */
