@@ -187,6 +187,7 @@ body {
   .container {
     background-size: 100% 100%; /* Makes the image smaller on smaller screens */
     background-position: top; /* Aligns the image towards the top for better fit */
+    background-attachment: fixed
 
   }
 }
