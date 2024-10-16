@@ -23,13 +23,13 @@ function PotterPals({ items, setItems }) {
   return (
     <div className="spelllist spellscss">
       <div>
-        <h2 id="custom">Custom Characters</h2>
+        <h2 className="custom">Custom Characters</h2>
         <br />
         <br />
         <CharacterList characters={items} setItems={setItems} allowDeleteButton />
       </div>
       <div>
-        <h2 id="canon">Canon Characters</h2>
+        <h2 className="canon">Canon Characters</h2>
         <SearchBar onSearchChange={setSearch} />
         <CharacterList characters={charactersToDisplay} />
       </div>
@@ -41,9 +41,10 @@ function SearchBar({ onSearchChange }) {
     <div className="searchbar">
       <label htmlFor="search"> Search Characters:</label>
       <input
+        className="searchbar"
         type="text"
         id="search"
-        placeholder="Find a Potter Pal"
+        placeholder="Hermione Granger"
         onChange={(e) => onSearchChange(e.target.value)}
       />
     </div>

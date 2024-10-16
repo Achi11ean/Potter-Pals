@@ -21,8 +21,9 @@ useEffect(() => {
 
   return (
     <main>
-      <NavBar />
+
          <h1 className="logo" id="potterpalss">Potter Pals</h1>
+         <NavBar />
       <CharacterNavBar onChangePage={setPage} />
       {page === "Form" ? <CharacterForm items={items} setItems={setItems}/> : <CharacterList items={items} setItems={setItems} />}
     </main>

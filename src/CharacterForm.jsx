@@ -54,6 +54,7 @@ function CharacterForm({ items, setItems }) {
         <label>
           Pal Name:
           <input
+            className="searchbar"
             placeholder="[Enter Name]"
             type="text"
             name="name"
@@ -64,6 +65,7 @@ function CharacterForm({ items, setItems }) {
         <label>
           Hogwarts House:
           <input
+            className="searchbar"
             placeholder="[Enter House Name]"
             type="text"
             name="house"
@@ -89,6 +91,7 @@ function CharacterForm({ items, setItems }) {
         <label>
           Pal Image:
           <input
+            className="searchbar"
             placeholder="https://imagelink"
             type="text"
             name="image"

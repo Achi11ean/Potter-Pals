@@ -8,6 +8,8 @@ function Characters() {
     <main>
         <NavBar />
          <h1 className="logo" id="potterpalss">Potter Pals:</h1>
+         <NavBar />
+
         <PotterPals />
     </main>
   );

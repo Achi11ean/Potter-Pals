@@ -22,7 +22,7 @@ function PotterPals() {
   return (
     <div className="harryPotterPals">
       <h1>Harry Potter Pals</h1>
-      <SearchBar onSearchChange={setSearch} />
+      <SearchBar  onSearchChange={setSearch} />
       <CharacterList characters={charactersToDisplay} />
     </div>
   );

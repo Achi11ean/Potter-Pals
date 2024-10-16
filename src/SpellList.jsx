@@ -20,6 +20,7 @@ function SpellList({ items, setItems }) {
   return (
     <section className="spelllist spellscss">
       <div>
+        
         <button onClick={toggleCustomSpells} style={{ cursor: "pointer" }}>
           Custom Spells (click to {showCustomSpells ? "collapse" : "expand"})
         </button>

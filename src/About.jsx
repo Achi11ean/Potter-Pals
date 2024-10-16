@@ -1,5 +1,6 @@
 import React from "react";
 import NavBar from "./NavBar";
+import "./App.css"
 
 
 
@@ -12,18 +13,19 @@ import NavBar from "./NavBar";
 function About() {
   return (
     <main>
-      <NavBar />
+
       <h1 className="logo" id="potterpalss">
         The PotterHub
       </h1>
+      <NavBar />
       <div className="potterFacts">
         <h2 id="welcome">Welcome to <span id="bigpotter"><span id="potter">Potter</span><span id="hub">Hub</span></span> </h2>
         <p className ="fancytext">
           
-            Your ultimate destination where the vast database of the magical
-            world of Harry Potter meets the limitless bounds of your
-            imagination! On this site, you'll have access to an extensive list
-            of Harry Potter spells and characters. Feel free to browse through
+            On this site you'll have access to an extensive list
+            of Harry Potter spells and characters. 
+            <br/><br/>
+            Feel free to browse through
             the spells and explore their unique effects. If you're feeling
             creative, click on "New Spell" to open a form where you can craft
             your own magical creation: give it a name, describe its effects,

@@ -1,22 +1,37 @@
-.navbar > a{
+.navbar > a {
     display: inline-block;
     box-sizing: border-box;
     width: 400px;
     padding: 5px;
-    font-family:cursive ;
+    font-family: cursive;
     margin: 0 6px 6px;
     background: lightblue;
     text-decoration: none;
     text-align: center;
-    font-size: min(10vw, 40px) ;
+    font-size: min(10vw, 40px);
     border-radius: 40px;
-    font-weight:bold;
+    font-weight: bold;
     color: black;
 }
-  
+
 a.active {
     background: black;
     color: white;
-    border: 1px white solid;
-    font-weight: 700px;
+    border: 1px solid white;
+    font-weight: 700;
+}
+
+/* Media Query for screens up to 450px */
+@media (max-width: 450px) {
+  .navbar > a {
+    width: 100%; /* Full width */
+    font-size: min(8vw, 30px); /* Smaller font size */
+    padding: 10px; /* Increased padding for touch-friendliness */
+    margin: 5px 0; /* Stack links with space in between */
+    border-radius: 20px; /* Slightly reduced border radius */
+  }
+
+  a.active {
+    border-width: 2px; /* Slightly thicker border */
+  }
 }

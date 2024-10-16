@@ -14,7 +14,7 @@ function Spell({ spell, setItems, items = [] }) {
       });
   }
   return (
-    <li style={{ border: "1px solid white" }}>
+    <li style={{ border: "2px solid white", borderRadius: "95px" }}>
       <h4>Name: {name}</h4>
       <h5>Effect: {description}</h5>
       {spellColor ? <p>Spell Color: {spellColor}</p> : <></>}

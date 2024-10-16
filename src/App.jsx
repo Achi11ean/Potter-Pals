@@ -24,8 +24,10 @@ useEffect(() => {
   return (
     <main>
       {/* here we are importing our NavBar component so it shows navbar at the top of the page.  */}
-      <NavBar />
-         <h1 className="logo" id="potterpalss">Harry Potter Spells</h1>
+         <h1 className="logo" id="potterpalss">
+           Potter Spells</h1>
+         <NavBar />
+
          {/* here we are saying that when the user changes the page we want to update the page with the requested data|| 
          this is also a conditional rendering statement, it checks the value of page, if page is "form" it will show the spell form component;
          if it is NOT form it will show the spellList component. both components receive two props: items and Set Items */}

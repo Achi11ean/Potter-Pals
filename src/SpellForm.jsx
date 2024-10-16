@@ -8,12 +8,13 @@ function SpellForm({ items, setItems }) {
     image: ""
   });
 
-  // Expanded list of colors
   const colorOptions = [
-    "Red", "Blue", "Green", "Yellow", "Purple", "Black", "White", "Orange", 
-    "Pink", "Brown", "Gray", "Cyan", "Magenta", "Lime", "Violet", 
+    "Red", "Blue", "Green", "Yellow", "Purple", "Black", "White", "Orange",
+    "Pink", "Brown", "Gray", "Cyan", "Magenta", "Lime", "Violet",
     "Turquoise", "Maroon", "Olive", "Navy", "Gold", "Silver"
   ];
+
+  const defaultImage = "https://i0.wp.com/dungeonsanddragonsfan.com/wp-content/uploads/2024/07/hunters-mark-dnd-5e-1.png?fit=800%2C450&ssl=1"; // Default image URL
 
   function handleChange(event) {
     setFormData({
@@ -28,7 +29,7 @@ function SpellForm({ items, setItems }) {
       name: formData.name,
       description: formData.description,
       spellColor: formData.spellColor,
-      image: formData.image,
+      image: formData.image || defaultImage, // Use default image if empty
     };
 
     fetch("https://json-server-template-0cqg.onrender.com/spells", {
@@ -56,6 +57,7 @@ function SpellForm({ items, setItems }) {
         <label>
           Cast Spell:
           <input
+            className="searchbar"
             placeholder="[Spell Name]"
             type="text"
             name="name"
@@ -66,6 +68,7 @@ function SpellForm({ items, setItems }) {
         <label>
           Spell Effect:
           <input
+            className="searchbar"
             placeholder="[What does your spell do?]"
             type="text"
             name="description"
@@ -76,12 +79,13 @@ function SpellForm({ items, setItems }) {
         <label>
           Spell Color:
           <select
+            className="searchbar"
             name="spellColor"
             value={formData.spellColor}
             onChange={handleChange}
             style={{
-              maxHeight: "150px", // Control the height
-              overflowY: "auto"   // Enable vertical scrolling
+              maxHeight: "150px",
+              overflowY: "auto"
             }}
           >
             <option value="">Select a Color</option>
@@ -95,6 +99,7 @@ function SpellForm({ items, setItems }) {
         <label>
           Magic Image:
           <input
+            className="searchbar"
             placeholder="[Enter the image link]"
             type="text"
             name="image"
