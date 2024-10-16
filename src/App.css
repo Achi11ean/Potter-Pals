@@ -37,8 +37,9 @@
   font-size: 4em; /* Font size */
   margin-top: 1rem; /* Space above the button */
   font-family:cursive; /* Use the specified font family */
-  text-decoration: underline green; /* Underline style */
-  padding-right: 0.3em; /* Right padding */
+  text-decoration: underline; /* Underline style */
+  padding-right: 0.5em; /* Right padding */
+  padding-left: 0.5em; /* Left padding */
   margin-right: 7em; /* Right margin */
   margin-left: 5.5em; /* Left margin */
 }
@@ -189,8 +190,8 @@ body {
 
 @media only screen and (max-width: 450px) {
   .container {
-    background-size: 100% 100%; /* Makes the image smaller on smaller screens */
-    background-position: center top; /* Aligns the image towards the top for better fit */
+    background-size: 100%; /* Makes the image smaller on smaller screens */
+    background-position: center ; /* Aligns the image towards the top for better fit */
     background-attachment: fixed;
     background-repeat: no-repeat; 
 
