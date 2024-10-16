@@ -54,6 +54,7 @@ function CharacterForm({ items, setItems }) {
         <label>
           Pal Name:
           <input
+            placeholder="[Enter Name]"
             type="text"
             name="name"
             value={formData.name}
@@ -63,6 +64,7 @@ function CharacterForm({ items, setItems }) {
         <label>
           Hogwarts House:
           <input
+            placeholder="[Enter House Name]"
             type="text"
             name="house"
             value={formData.house}
@@ -87,6 +89,7 @@ function CharacterForm({ items, setItems }) {
         <label>
           Pal Image:
           <input
+            placeholder="https://imagelink"
             type="text"
             name="image"
             value={formData.image}

@@ -1,41 +1,45 @@
 #root {
-  max-width: 1280px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  border: 2px solid lightblue ;
+  border-radius: 40px;
+  border: 2px solid rgb(0, 0, 0) ;
   min-width: 80%;
   min-height: 100%;
 }
 .potterFacts{
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(78, 51, 51, 0.751);
   padding-top: 1em;
   padding-left: 9px;
   padding-right: 9px;
   font-weight: bold;
+  border-radius: 40px;
+  font-size: 30px;
   font-family: 'pottertype';
-  color: white
+  color: rgb(255, 255, 255)
+
 }
 .spellscss {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(58, 56, 73, 0.779);
   font-weight: bold;
-
+  font-size: 30px;
+  border-radius: 40px;
 }
 .spellButtons {
   padding: 0.5rem;
   background-color: orange; /* Orange background color */
   color: black; /* Black text color */
   border: none; /* No border */
-  border-radius: 12px; /* Rounded corners */
+  border-radius: 52px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
-  font-size: 2em; /* Font size */
+  font-size: 4em; /* Font size */
   margin-top: 1rem; /* Space above the button */
-  font-family: 'Playfair Display', serif; /* Use the specified font family */
-  text-decoration: underline; /* Underline style */
-  padding-right: 0.5em; /* Right padding */
-  padding-left: 0.5em; /* Left padding */
-  margin-right: 5.5em; /* Right margin */
+  font-family:cursive; /* Use the specified font family */
+  text-decoration: underline green; /* Underline style */
+  padding-right: 0.3em; /* Right padding */
+  margin-right: 7em; /* Right margin */
   margin-left: 5.5em; /* Left margin */
 }
 

@@ -1,13 +1,15 @@
 .navbar > a{
     display: inline-block;
     box-sizing: border-box;
-    width: 200px;
+    width: 400px;
     padding: 5px;
+    font-family:cursive ;
     margin: 0 6px 6px;
     background: lightblue;
     text-decoration: none;
     text-align: center;
-    font-size: min(10vw, 20px) ;
+    font-size: min(10vw, 40px) ;
+    border-radius: 40px;
     font-weight:bold;
     color: black;
 }
@@ -15,5 +17,6 @@
 a.active {
     background: black;
     color: white;
-    border: 1px white solid
+    border: 1px white solid;
+    font-weight: 700px;
 }
