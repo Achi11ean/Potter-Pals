@@ -20,7 +20,7 @@ function About() {
       <NavBar />
       <div className="potterFacts">
         <h2 id="welcome">Welcome to <span id="bigpotter"><span id="potter">Potter</span><span id="hub">Hub</span></span> </h2>
-        <p className ="fancytext">
+        <p className =" intro fancytext">
           
             On this site you'll have access to an extensive list
             of Harry Potter spells and characters. 
