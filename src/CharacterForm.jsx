@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 
 function CharacterForm({ items, setItems }) {
+  const defaultImage = "https://mycomatherapy.weebly.com/uploads/4/7/9/5/47958041/3388595_orig.png"; // Replace with your default image URL
+
   const [formData, setFormData] = useState({
     name: "",
     house: "",
@@ -17,21 +19,24 @@ function CharacterForm({ items, setItems }) {
 
   function handleSubmit(event) {
     event.preventDefault();
+
+    // Use default image if the image field is empty
     const itemData = {
       name: formData.name,
       house: formData.house,
       wandType: formData.wandType,
-      image: formData.image,
+      image: formData.image || defaultImage, // Assign default image if empty
     };
+
     fetch("https://json-server-template-0cqg.onrender.com/characters", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(itemData),
     })
       .then((response) => response.json())
-      .then((newSpell) => {
-        console.log(newSpell);
-        setItems([...items, newSpell]);
+      .then((newCharacter) => {
+        console.log(newCharacter);
+        setItems([...items, newCharacter]);
         setFormData({
           name: "",
           house: "",
@@ -82,9 +87,9 @@ function CharacterForm({ items, setItems }) {
           >
             <option value="">Ollivander's</option>
             {wands.map((type) => (
-                <option key={type} value={type}>
+              <option key={type} value={type}>
                 {type}
-                </option>
+              </option>
             ))}
           </select>
         </label>

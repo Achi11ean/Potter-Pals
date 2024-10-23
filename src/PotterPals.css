@@ -21,6 +21,7 @@
     padding: 10px;
     border-radius: 45px;
     text-align: center;
+    
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     color: white;
     max-height: 200px; /* Adjust height as needed */

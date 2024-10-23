@@ -110,7 +110,6 @@ ol {
   list-style-type: none; /* Removes bullet points */
 }
 .characterCard {
-  border: 2px solid white;
   border-radius: 40px;
 }
 

@@ -4,21 +4,28 @@
   padding: 2rem;
   text-align: center;
   border-radius: 40px;
+  background: linear-gradient(45deg,rgba(255, 0, 0, 0.514), rgba(238, 130, 238, 0.582), rgba(0, 255, 255, 0.516), rgba(0, 255, 0, 0.665)); /* Gradient background */
+  ; /* Orange background color */
+
   border: 2px solid rgb(0, 0, 0) ;
   min-width: 80%;
   min-height: 100%;
+  
 }
 .potterFacts{
   text-align: left;
-  max-height: 600px; /* Adjust height as needed */
+  margin-top: 15px;
+  max-height: 300px; /* Adjust height as needed */
   overflow-y: auto; /* Enable vertical scrolling */
-  background-color: rgba(78, 51, 51, 0.751);
+  background-color: rgba(85, 53, 53, 0.751);
   padding-top: 1em;
   padding-left: 9px;
+  margin-left: 7rem;
   padding-right: 9px;
   font-weight: bold;
+  max-width:80rem;
   border-radius: 40px;
-  font-size: 30px;
+  font-size: 20px;
   font-family: 'pottertype';
   color: rgb(255, 255, 255)
 
@@ -36,14 +43,14 @@
   border: none; /* No border */
   border-radius: 52px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
-  font-size: 4em; /* Font size */
+  font-size: 2rem; /* Font size */
   margin-top: 1rem; /* Space above the button */
   font-family:cursive; /* Use the specified font family */
   text-decoration: underline; /* Underline style */
   padding-right: 0.5em; /* Right padding */
   padding-left: 0.5em; /* Left padding */
-  margin-right: 4em; /* Right margin */
-  margin-left: 5.5em; /* Left margin */
+  margin-right: 16rem; /* Right margin */
+  margin-left: 16rem; /* Left margin */
 }
 
 .newSpell {
@@ -51,7 +58,7 @@
   margin-right: 4em;
   color: pink;
   border-radius: 30px;
-  font-size: 1.2em;
+  font-size: 3em;
 }
 @media (max-width:450px) {
   .spellscss {
@@ -69,7 +76,7 @@ text-align:center
   background-size: 50% auto
  }
  .fancytext {
-  font-size: 1em;
+  font-size: 1.5em;
  }
  .spellButtons {
   font-size: 1.5em;
@@ -83,9 +90,10 @@ text-align:center
   margin-right:2em;
   color: pink;
   border-radius: 30px;
-  font-size: 2em;
+  font-size: 1em;
   width: 200px
 }
+
 
 }
 
@@ -105,11 +113,12 @@ text-align:center
   transition: filter 300ms;
   font-family: 'HarryP'; /* Use the custom HarryP font */
   font-size: 6em;
+  padding:10px;
   color: #ebab0a; /* A golden color */
   background-color: black;
 }
 #bigpotter {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   padding: 3px
 }
 #potter {
@@ -117,7 +126,7 @@ text-align:center
 }
 #hub {
   border:1px solid black;
-  font-size: 2.5rem;
+  font-size: 4rem;
   background-color: orange;
   color: black;
   border-radius: 10px;
@@ -167,7 +176,7 @@ text-align:center
 }
 .pottertype {
     text-shadow: 2px 2px 4px #888; /* Optional shadow effect */
-    padding: 0.7rem;
+    padding: 1rem;
     background-color: rgb(225, 96, 96); /* Black background color */
     color: rgb(11, 67, 220); /* Orange text color */
     border: none; /* No border */
@@ -192,6 +201,7 @@ strong {
   font-size: 3em;
   text-align: center;
   border: 1px solid pink;
+  padding: 5px;
   margin-right: 6em;
   margin-left: 6em;
   border-radius: 40px;
