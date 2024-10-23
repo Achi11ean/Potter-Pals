@@ -68,6 +68,8 @@ text-align:center
 
   .potterFacts {
     font-size: 1.2em;
+    margin-left: 0;
+    width: 22rem;
     max-height: 800px; /* Adjust height as needed */
     overflow-y: auto; /* Enable vertical scrolling */
   }
